@@ -1,0 +1,16 @@
+/* Variable collection */
+:root {
+  /* Mode 1 */
+  /* color */
+  --beige-site: #ffcf81;
+  --blanc: #ffffff;
+  --bleu-site: #75c9ee;
+  --noir: #000000;
+  --blanc-site: #ffffff;
+  --bleu-site: #75c9ee;
+  --gris: #d9d9d9;
+  --violet-site: #8265ef;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
