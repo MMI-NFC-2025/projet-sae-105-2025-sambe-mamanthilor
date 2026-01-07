@@ -9,9 +9,21 @@
   --blanc-site: #ffffff;
   --gris: #d9d9d9;
   --violet-site: #8265ef;
---vert-site: #00C950;
-
+  --vert-site: #00C950;
   --bleu-filtre: #1A3A6E;
+  
+  /* Additional colors */
+  --gris-tres-clair: #f0f0f0;
+  --gris-fonce: #333333;
+  --blanc-casse: #f9f9f9;
+  --orange-site: #ffa500;
+  --orange-fonce: #ff8c00;
+  --gris-moyen: #666666;
+  --gris-leger: #f5f5f5;
+  --beige-transparent: rgba(255, 207, 129, 0.62);
+  --noir-transparent-10: rgba(0, 0, 0, 0.1);
+  --noir-transparent-15: rgba(0, 0, 0, 0.15);
+  --orange-transparent: rgba(255, 165, 0, 0.4);
 }
 body {
   font-family: "Inter", sans-serif;

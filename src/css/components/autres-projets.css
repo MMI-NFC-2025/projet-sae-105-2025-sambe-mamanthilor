@@ -7,6 +7,10 @@
   background-color: #ffffff;
 }
 
+.content-section--no-hero {
+  padding: 2rem;
+}
+
 .content-section .container {
   max-width: 1200px;
   margin: 0 auto;

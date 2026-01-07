@@ -442,3 +442,593 @@
     text-align: left;
   }
 }
+/* ========== FEMMES DE SCIENCE PAGE ========== */
+
+.hero--femmes-science .hero-meta {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  z-index: 5;
+  white-space: nowrap;
+}
+
+/* ========== INTRODUCTION SECTION ========== */
+
+.introduction-section {
+  background-color: #75c9ee;
+  padding: 3rem 2rem;
+}
+
+.introduction-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introduction-section p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #000000;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ========== FIGURES & RECITS SECTION ========== */
+
+.figures-section {
+  background-color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.figures-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.figures-section h2 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  padding: 2rem 2rem 0.5rem 2rem;
+  line-height: 1.3;
+  border-top: 4px solid #8265ef;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.figures-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 0.5rem 2rem 2rem 2rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-bottom: 4px solid #8265ef;
+}
+
+.figures-text {
+  flex: 1;
+  text-align: center;
+}
+
+.figures-text p {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.figures-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========== FICTION SECTION (CAROUSEL) ========== */
+
+.fiction-section {
+  background-color: rgba(255, 207, 129, 0.62);
+  padding: 4rem 2rem;
+}
+
+.fiction-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.fiction-section h2 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.fiction-section .carousel {
+  position: relative;
+}
+
+.fiction-section .carousel-wrapper {
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.fiction-section .carousel-items {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 200px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: transparent;
+}
+
+.fiction-section .carousel-item {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fiction-section .carousel-item img {
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.fiction-section .carousel-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.fiction-section .carousel-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+
+.fiction-section .carousel-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* INVISIBILITÉ (1ère carte) */
+.invisibility-section {
+  padding: 8rem 0;
+  background: #ffffff; 
+}
+
+.invisibility-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff; /* FOND BLANC pur */
+  padding: 4rem 3rem;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* BORDER VIOLET GAUCHE + BAS UNIQUEMENT */
+.invisibility-section .container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px; /* épaisseur gauche */
+  height: 100%;
+  background: linear-gradient(to top, #8b5cf6, #7c3aed); /* violet maquette */
+  border-radius: 24px 0 0 24px;
+}
+
+.invisibility-section .container::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 0;
+  bottom: 0;
+  height: 4px; /* épaisseur bas */
+  background: linear-gradient(to right, #8b5cf6, #7c3aed);
+  border-radius: 0 0 24px 24px;
+}
+
+/* CONTEMPORAINE (2ème carte) */
+.contemporary-section {
+  padding: 8rem 0;
+  background: hwb(0 100% 0%);
+}
+
+.contemporary-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff; /* FOND BLANC pur */
+  padding: 4rem 3rem;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* BORDER ORANGE GAUCHE + BAS (2ème carte) */
+.contemporary-section .container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to top, #8b5cf6 ,#8b5cf6);
+  border-radius: 24px 0 0 24px;
+}
+
+.contemporary-section .container::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: linear-gradient(to right, #8b5cf6, #8b5cf6);
+  border-radius: 0 0 24px 24px;
+}
+
+/* TYPO */
+.invisibility-section h2,
+.contemporary-section h2 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.invisibility-section p,
+.contemporary-section p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: #4b5563;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* MOBILE (ton CSS) */
+@media (max-width: 768px) {
+  .invisibility-section .container,
+  .contemporary-section .container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .invisibility-section h2,
+  .contemporary-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .invisibility-section p,
+  .contemporary-section p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ========== FRISE TIMELINE ========== */
+
+.frise-timeline {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.frise-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #8265ef;
+  transform: translateX(-50%);
+}
+
+.frise-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+  align-items: center;
+  gap: 2rem;
+}
+
+.frise-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: #8265ef;
+  clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+  z-index: 2;
+}
+
+.frise-left {
+  width: 100%;
+}
+
+.frise-left .frise-content {
+  flex: 1;
+  text-align: center;
+  width: 45%;
+  margin-left: 0;
+  padding-right: 1rem;
+}
+
+.frise-left .frise-image-wrapper {
+  order: 2;
+  width: 100px;
+  height: 100px;
+}
+
+.frise-right {
+  width: 100%;
+}
+
+.frise-right .frise-content {
+  flex: 1;
+  text-align: center;
+  width: 48%;
+  margin-left: auto;
+}
+
+.frise-right .frise-image-wrapper {
+  order: -1;
+  width: 100px;
+  height: 100px;
+}
+
+.frise-image-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #8265ef;
+  flex-shrink: 0;
+}
+
+.frise-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frise-content {
+  flex: 1;
+  margin: 0;
+}
+
+.frise-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.frise-discipline {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #8265ef;
+  margin: 0.3rem 0;
+}
+
+.frise-date {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.3rem 0 0.8rem 0;
+}
+
+.frise-content p:last-child {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== RESPONSIVE 768px ========== */
+
+@media (max-width: 768px) {
+  .introduction-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .introduction-section p {
+    font-size: 1rem;
+  }
+
+  .figures-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .figures-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .figures-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .figures-text p {
+    font-size: 0.95rem;
+  }
+
+  .fiction-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .fiction-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fiction-section .carousel-item {
+    flex: 0 0 calc(33.333% - 0.67rem);
+  }
+
+  .invisibility-section,
+  .contemporary-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .invisibility-section h2,
+  .contemporary-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .invisibility-section p,
+  .contemporary-section p {
+    font-size: 0.95rem;
+  }
+
+  .matilda-timeline-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .matilda-timeline-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .matilda-timeline-section > .container > p:first-of-type {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .frise-image {
+    padding: 1.5rem;
+  }
+}
+
+/* ========== RESPONSIVE 480px ========== */
+
+@media (max-width: 480px) {
+  .introduction-section {
+    padding: 2rem 1rem;
+  }
+
+  .introduction-section p {
+    font-size: 0.9rem;
+  }
+
+  .figures-section {
+    padding: 2rem 1rem;
+  }
+
+  .figures-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .figures-content {
+    gap: 1rem;
+  }
+
+  .figures-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .fiction-section {
+    padding: 2rem 1rem;
+  }
+
+  .fiction-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .fiction-section .carousel-item {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  .carousel-buttons {
+    gap: 1.5rem;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .invisibility-section,
+  .contemporary-section {
+    padding: 2rem 1rem;
+    border-left-width: 4px;
+    border-bottom-width: 4px;
+  }
+
+  .invisibility-section h2,
+  .contemporary-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .invisibility-section p,
+  .contemporary-section p {
+    font-size: 0.9rem;
+  }
+
+  .matilda-timeline-section {
+    padding: 2rem 1rem;
+  }
+
+  .matilda-timeline-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .matilda-timeline-section > .container > p:first-of-type {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .frise-image {
+    padding: 1rem;
+  }
+}
