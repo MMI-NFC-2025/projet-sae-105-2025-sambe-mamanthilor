@@ -6,5 +6,5 @@
 - NOM :Sambe
 - PRÉNOM :Maman Thilor
 - GROUPE :B2
-- URL du site :
-- URL FIGMA :
+- URL du site :https://iridescent-llama-dfa706.netlify.app/fr/
+- URL FIGMA :https://www.figma.com/design/Ie4FQoKiH25qpJ3lHMK9EZ/Projet-solo?node-id=0-1&t=SVZlWvnsn7VVBZaS-1
