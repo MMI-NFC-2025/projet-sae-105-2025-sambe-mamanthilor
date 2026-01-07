@@ -34,31 +34,64 @@
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../en/vulgarisation-alice-recoque.html" class="language-toggle">EN</a>
+            <div class="header-right">
+                <a href="../en/vulgarisation-alice-recoque.html" class="language-toggle">EN</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <button class="mobile-menu-close" aria-label="Fermer le menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="alice-recoque.html">Alice Recoque</a></li>
+                <li><a href="vulgarisation-alice-recoque.html">Vulgarisation de la théorie d'Alice Recoque</a></li>
+                <li><a href="femmes-de-science.html">Les femmes de sciences dans la littérature</a></li>
+                <li><a href="qui-a-voulu-effacer-alice-recoque.html">"Qui a voulu effacé Alice Recoque"</a></li>
+                <li><a href="les-fabuleuses-effet-matilda.html">Les fabuleuses ou l'effet Matilda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="autres-projets.html">Autres projets</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero hero-multi-image">
-        <img src="../assets/img/théorie-d_alice.avif" alt="Vulgarisation de la théorie d'Alice Recoque">
-        <div class="hero-content">
-            <h1>Vulgarisation de la théorie d'Alice RECOQUE</h1>
-            <p class="hero-subtitle">une première oubliée de l'IA</p>
-            <p class="hero-meta">Publié par Maman Thilor Sambe, le 24/10/2025</p>
+    <section class="hero hero--vulgarisation">
+        <img src="../assets/img/théorie-d_alice.avif" alt="Vulgarisation de la théorie d'Alice Recoque" class="hero__image">
+        <div class="hero__bande hero__bande--top">
+            <h1 class="hero-title">Vulgarisation de la théorie d'Alice RECOQUE</h1>
         </div>
     </section>
 
+    <p class="alice-who-published">Publié par Maman Thilor Sambe, le 24/10/2025</p>
+
     <!-- Content Section -->
-    <section class="content-section">
+    <section class="vulgarisation-understand-section">
         <div class="container">
             <h2>Comprendre sa théorie</h2>
             <p>Alice Recoque ne s'est pas seulement intéressée aux machines. Sa théorie de l'interaction homme-machine imagine un dialogue réel entre l'humain et l'ordinateur, où la technique reste au service des personnes. Cette page propose une version simplifiée de ses idées pour montrer en quoi elles annoncent nos usages actuels de l'intelligence artificielle.</p>
+        </div>
+    </section>
 
+    <section class="vulgarisation-ideas-section">
+        <div class="container">
             <h2>Les idées clés de sa théorie</h2>
             <div class="theory-ideas">
                 <div class="idea-item">
@@ -77,7 +110,11 @@
                     <strong>Rôle de l'humain :</strong> l'intelligence artificielle doit rester contrôlée, expliquée et discutée par les humains qui la conçoivent et l'utilisent.
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="vulgarisation-ethics-section">
+        <div class="container">
             <h2>Ethique & Héritage</h2>
             <p>Chez Bull, Alice Recoque travaille sur des systèmes d'intelligence artificielle et contribue au développement de langages comme Prolog, pensés pour représenter des règles et du raisonnement. En parallèle, elle participe à la réflexion qui mène à la création du CNIL et alerte sur les risques de surveillance et de perte de contrôle des données personnelles. Sa pensée appelée depuis une véritable éthique des algorithmes : la responsabilité doit servir les humains, respecter leurs droits et être pensée comme une véritable éthique des algorithmes : la responsabilité doit servir les humains, respecter leurs droits et être pensée comme une véritable éthique des algorithmes.</p>
         </div>
@@ -85,24 +122,24 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="logo-footer">
-                <img src="../assets/icone/logo_du_site.svg" alt="Empreintes invisibles de la science">
-            </div>
-            <nav class="footer-nav">
+        <div class="footer-header">
+            <div class="footer-container">
+                <img src="../assets/icone/logo_du_site.svg" alt="Logo footer">
+                <div class="footer-content">
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="glossaire.html">Glossaire</a></li>
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-credits">
+                <h2>Mention Légale</h2>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
+            </div>
+            </div>
         </div>
         <div class="footer-legal">
-            <h4>Mention Légale</h4>
-            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
-        </div>
-        <div class="footer-credits">
             <p>Maman Thilor Sambe | Groupe B2 | mamansambe47@gmail.com</p>
         </div>
     </footer>

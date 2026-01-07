@@ -34,75 +34,95 @@
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../en/index.html" class="language-toggle">EN</a>
+            <div class="header-right">
+                <a href="../en/index.html" class="language-toggle">EN</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <button class="mobile-menu-close" aria-label="Fermer le menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="alice-recoque.html">Alice Recoque</a></li>
+                <li><a href="vulgarisation-alice-recoque.html">Vulgarisation de la théorie d'Alice Recoque</a></li>
+                <li><a href="femmes-de-science.html">Les femmes de sciences dans la littérature</a></li>
+                <li><a href="qui-a-voulu-effacer-alice-recoque.html">"Qui a voulu effacé Alice Recoque"</a></li>
+                <li><a href="les-fabuleuses-effet-matilda.html">Les fabuleuses ou l'effet Matilda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="autres-projets.html">Autres projets</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero">
-        <img src="../assets/img/alice-recoque.webp" alt="Alice Recoque">
-        <div class="hero-content">
-            <h1>Découvrez l'histoire des femmes de science oubliées</h1>
+    <section class="hero hero--accueil">
+        <img src="../assets/img/alice-recoque.webp" alt="Alice Recoque" class="hero__image">
+        <div class="hero-overlay"></div>
+        <div class="hero__bande hero__bande--top">
+            <h1 class="hero-title">Découvrez l'histoire inspirante <br>des femmes oubliées de la science</h1>
+        </div>
+        <div class="hero__bande hero__bande--bottom">
             <p class="hero-subtitle">À travers le parcours d'Alice Recoque</p>
         </div>
     </section>
 
     <!-- Welcome Section -->
-    <section class="welcome">
-        <div class="container">
-            <h2>Bienvenue sur Empreintes invisibles de la science</h2>
-            <p>Un site dédié à la mémoire et à la valorisation des femmes scientifiques oubliées.</p>
-        </div>
+    <section class="hero__welcome">
+        <h2>Bienvenue sur Empreintes invisibles de la science, un site dédié à la mémoire et à la valorisation des femmes scientifiques oubliées.</h2>
     </section>
 
-    <!-- Alice Recoque Section -->
-    <section class="alice-section">
-        <div class="container">
-            <div class="alice-card">
-                <h3>Alice Recoque</h3>
-                <p>Pionnière de l'informatique et de l'intelligence artificielle, son parcours montre l'importance de rendre justice à celles oubliées comme elle.</p>
-                <a href="alice-recoque.html" class="btn btn-primary">En savoir plus</a>
-            </div>
+    <!-- Cards Section -->
+    <section class="cards">
+        <!-- Card Alice Recoque -->
+        <div class="card card--alice">
+            <h3 class="card__title">Alice Recoque</h3>
+            <p class="card__text">Pionnière de l'informatique et de l'intelligence artificielle, son parcours montre l'importance de rendre justice à celles oubliées comme elle.</p>
+            <a href="alice-recoque.html" class="btn btn-primary">En savoir plus</a>
         </div>
-    </section>
 
-    <!-- femmes de science Section -->
-    <section class="literature-section">
-        <div class="container">
-            <h2>Les femmes de science dans la littérature</h2>
-            <p>Longtemps absentes des grands récits, les femmes scientifiques trouvent aujourd'hui leur place grâce à des auteurs engagés.</p>
+        <!-- Card Littérature -->
+        <div class="card card--literature">
+            <h3 class="card__title">Les femmes de science dans la littérature</h3>
+            <p class="card__text">Longtemps absentes des grands récits, les femmes scientifiques trouvent aujourd'hui leur place grâce à des auteurs engagés.</p>
             <a href="femmes-de-science.html" class="btn btn-secondary">En savoir plus</a>
         </div>
-    </section>
 
-    <!-- Théorie d'Alice Recoque Section -->
-    <section class="theory-section">
-        <div class="container">
-            <h2>Théorie d'Alice Recoque</h2>
-            <p>Cette vulgarisation met en lumière les enjeux et applications modernes de ses travaux, en lien avec les avancées actuelles en intelligence artificielle.</p>
+        <!-- Card Théorie -->
+        <div class="card card--theory">
+            <h3 class="card__title">Théorie d'Alice Recoque</h3>
+            <p class="card__text">Cette vulgarisation met en lumière les enjeux et applications modernes de ses travaux, en lien avec les avancées actuelles en intelligence artificielle.</p>
             <a href="vulgarisation-alice-recoque.html" class="btn btn-secondary">En savoir plus</a>
         </div>
-    </section>
 
-    <!-- Qui a voulu effacer Alice Recoque Section -->
-    <section class="erase-section">
-        <div class="container">
-            <h2>Qui a voulu effacer Alice Recoque?</h2>
-            <p>Ce livre de Marion Carré retrace son parcours et démontre les obstacles qu'elle a rencontrés dans un milieu scientifique dominé par des hommes.</p>
+        <!-- Card Erase -->
+        <div class="card card--erase">
+            <h3 class="card__title">Qui a voulu effacer Alice Recoque?</h3>
+            <p class="card__text">Ce livre de Marion Carré retrace son parcours et démontre les obstacles qu'elle a rencontrés dans un milieu scientifique dominé par des hommes.</p>
             <a href="qui-a-voulu-effacer-alice-recoque.html" class="btn btn-secondary">En savoir plus</a>
         </div>
-    </section>
 
-    <!-- Effet Matilda Section -->
-    <section class="matilda-section">
-        <div class="container">
-            <h2>Les fabuleuses de l'effet Matilda</h2>
-            <p>L'effet Matilda est une étape importante dans la reconnaissance des femmes scientifiques à travers l'étude, l'éclairage et la reconnaissances.</p>
+        <!-- Card Matilda -->
+        <div class="card card--matilda">
+            <h3 class="card__title">Les fabuleuses ou l'effet Matilda</h3>
+            <p class="card__text">L'effet Matilda est une étape importante dans la reconnaissance des femmes scientifiques à travers l'étude, l'éclairage et la reconnaissances.</p>
             <a href="les-fabuleuses-effet-matilda.html" class="btn btn-secondary">En savoir plus</a>
         </div>
     </section>
@@ -112,30 +132,36 @@
         <div class="container">
             <h2>Galeries de films correlés</h2>
             <div class="carousel">
-                <button class="carousel-btn carousel-btn--prev" aria-label="Précédent"></button>
                 <div class="carousel-wrapper">
                     <div class="carousel-items">
                         <div class="carousel-item">
-                            <img src="../assets/img/film_radioactive.webp" alt="Film Radioactive" loading="lazy">
+                            <video src="../assets/video/marie-curie.mp4" poster="../assets/img/film_radioactive.webp" alt="Film Radioactive" loading="lazy" controls></video>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/Film-sur-les-femmes-de-science.avif" alt="Film sur les femmes de science" loading="lazy">
+                            <video src="../assets/video/film_sur_les_femmes_de_science.mp4" poster="../assets/img/Film-sur-les-femmes-de-science.avif" alt="Film sur les femmes de science" loading="lazy" controls></video>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/film_sur_effet_matilda.avif" alt="Film sur l'effet Matilda" loading="lazy">
+                            <video src="../assets/video/film_sur_effet_matilda.mp4" poster="../assets/img/film_sur_effet_matilda.avif" alt="Film sur l'effet Matilda" loading="lazy" controls></video>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/les-fabuleuses.avif" alt="Les Fabuleuses" loading="lazy">
+                            <video src="../assets/video/les_fabuleuses.mp4" poster="../assets/img/les-fabuleuses.avif" alt="Les Fabuleuses" loading="lazy" controls></video>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/bande_annonce_documentaire.webp" alt="Bande annonce documentaire" loading="lazy">
+                            <video src="../assets/video/hidden_figures.mp4" poster="../assets/img/hidden_figures.avif" alt="hidden_figures" loading="lazy" controls></video>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/entretien_avec_marion_carré.webp" alt="Entretien avec Marion Carré" loading="lazy">
+                            <video src="../assets/video/entretien_avec_marion_carré.mp4" poster="../assets/img/entretien_avec_marion_carré.webp" alt="Entretien avec Marion Carré" loading="lazy" controls></video>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-btn--next" aria-label="Suivant"></button>
+                <div class="carousel-buttons">
+                    <button class="carousel-btn carousel-btn--prev" aria-label="Précédent">
+                        <img src="../assets/icone/flèche-gauche-carousel.svg" alt="Précédent">
+                    </button>
+                    <button class="carousel-btn carousel-btn--next" aria-label="Suivant">
+                        <img src="../assets/icone/flèche-droite-carousel.svg" alt="Suivant">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -151,9 +177,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <img src="/assets/icone/logo_du_site.svg" alt="Logo footer">
-        <div class="footer-container">
-            <div class="footer-content">
+        <div class="footer-header">
+            <div class="footer-container">
+                <img src="../assets/icone/logo_du_site.svg" alt="Logo footer">
+                <div class="footer-content">
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
@@ -162,13 +189,13 @@
                 </ul>
             </div>
             <div class="footer-credits">
-                <h2>Mention légale
-    
-                </h2>
-                <p>Projet réalisé en 2025 dans le cadre d’un exercice
-pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
-                <p><small>Maman Thilor SAMBE | Groupe B2 | mamansambe47@gmail.com</small></p>
+                <h2>Mention Légale</h2>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
             </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>Maman Thilor Sambe | Groupe B2 | mamansambe47@gmail.com</p>
         </div>
     </footer>
 

@@ -1,0 +1,265 @@
+/* ========== ALICE RECOQUE - SECTIONS ========== */
+
+/* ========== ACHIEVEMENTS SECTION ========== */
+
+.achievements {
+  background-color: #ffcf81;
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+}
+
+.achievements__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievements__title {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 3rem 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Block: achievement-card */
+.achievement-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Elements */
+.achievement-card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.achievement-card__content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement-card__title {
+  font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.achievement-card__text {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========== CONTRIBUTIONS SECTION ========== */
+
+.contributions {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+}
+
+.contributions__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contributions__title {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 3rem 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Block: contribution-card */
+.contribution-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+  border: 2px solid #8265ef;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contribution-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(130, 101, 239, 0.15);
+  border-color: #75c9ee;
+}
+
+/* Elements */
+.contribution-card__title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+/* Bullet point avant le titre */
+.contribution-card__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #8265ef;
+  border-radius: 2px;
+}
+
+.contribution-card__text {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+  }
+
+  .achievements__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .achievement-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-card__image {
+    height: 250px;
+  }
+
+  .achievement-card__content {
+    padding: 1.5rem;
+  }
+
+  .achievement-card__title {
+    font-size: 1.3rem;
+  }
+
+  .achievement-card__text {
+    font-size: 1rem;
+  }
+
+  .contributions {
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+  }
+
+  .contributions__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .contribution-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contribution-card__title {
+    font-size: 1.2rem;
+  }
+
+  .contribution-card__text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements {
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .achievements__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-card {
+    margin-bottom: 1.2rem;
+  }
+
+  .achievement-card__image {
+    height: 200px;
+  }
+
+  .achievement-card__content {
+    padding: 1.2rem;
+  }
+
+  .achievement-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .achievement-card__text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .contributions {
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .contributions__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contribution-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-width: 2px;
+  }
+
+  .contribution-card__title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.2rem;
+  }
+
+  .contribution-card__text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+  }
+
+  .contribution-card__title::before {
+    width: 10px;
+    height: 10px;
+  }
+}

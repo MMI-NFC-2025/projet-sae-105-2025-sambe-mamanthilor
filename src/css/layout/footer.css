@@ -1,0 +1,133 @@
+.footer {
+  background-color: #75c9ee;
+  color: rgb(10, 10, 10);
+  padding: 0;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  background-color: #75c9ee;
+  padding: 3rem 2rem;
+  flex: 1;
+}
+
+.footer img {
+  height: 14rem;
+  width: auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-content a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.footer-content a:hover {
+  opacity: 0.8;
+}
+
+.footer-credits {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+}
+
+.footer-credits h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: rgb(0, 0, 0);
+}
+
+.footer-credits p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+  color: rgb(10, 10, 10);
+}
+
+.footer-credits p a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.footer-credits p small {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Footer bottom - credits */
+.footer-legal {
+  background-color: #8265ef;
+  color: rgb(8, 8, 8);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-header {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer img {
+    height: 8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content ul {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content a {
+    font-size: 1rem;
+  }
+
+  .footer-credits {
+    padding: 1.5rem;
+  }
+
+  .footer-credits h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-credits p {
+    font-size: 0.9rem;
+  }
+
+  .footer-legal {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

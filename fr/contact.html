@@ -34,19 +34,52 @@
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../en/contact.html" class="language-toggle">EN</a>
+            <div class="header-right">
+                <a href="../en/contact.html" class="language-toggle">EN</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <button class="mobile-menu-close" aria-label="Fermer le menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="alice-recoque.html">Alice Recoque</a></li>
+                <li><a href="vulgarisation-alice-recoque.html">Vulgarisation de la théorie d'Alice Recoque</a></li>
+                <li><a href="femmes-de-science.html">Les femmes de sciences dans la littérature</a></li>
+                <li><a href="qui-a-voulu-effacer-alice-recoque.html">"Qui a voulu effacé Alice Recoque"</a></li>
+                <li><a href="les-fabuleuses-effet-matilda.html">Les fabuleuses ou l'effet Matilda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="autres-projets.html">Autres projets</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
             <h1>Contact</h1>
+            
+            <div class="contact-intro">
+                <p>Vous avez des questions, des remarques ou des suggestions ? Nous serions ravis de vous entendre ! Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+            </div>
             
             <div class="contact-form-wrapper">
                 <h2>Formulaire de contact</h2>
@@ -75,33 +108,33 @@
                         <input type="checkbox" id="privacy" name="privacy" required>
                         <label for="privacy">J'accepte que les données saisies soient utilisées pour répondre à ma demande conformément à la politique de confidentialité.</label>
                     </div>
-
-                    <button type="submit" class="btn-submit">Envoyer</button>
                 </form>
             </div>
+            
+            <button type="submit" form="contactForm" class="btn-submit">Envoyer</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="logo-footer">
-                <img src="../assets/icone/logo_du_site.svg" alt="Empreintes invisibles de la science">
-            </div>
-            <nav class="footer-nav">
+        <div class="footer-header">
+            <div class="footer-container">
+                <img src="../assets/icone/logo_du_site.svg" alt="Logo footer">
+                <div class="footer-content">
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="glossaire.html">Glossaire</a></li>
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-credits">
+                <h2>Mention Légale</h2>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
+            </div>
+            </div>
         </div>
         <div class="footer-legal">
-            <h4>Mention Légale</h4>
-            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
-        </div>
-        <div class="footer-credits">
             <p>Maman Thilor Sambe | Groupe B2 | mamansambe47@gmail.com</p>
         </div>
     </footer>

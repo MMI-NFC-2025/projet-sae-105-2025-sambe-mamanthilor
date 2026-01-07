@@ -7,9 +7,11 @@
   --bleu-site: #75c9ee;
   --noir: #000000;
   --blanc-site: #ffffff;
-  --bleu-site: #75c9ee;
   --gris: #d9d9d9;
   --violet-site: #8265ef;
+--vert-site: #00C950;
+
+  --bleu-filtre: #1A3A6E;
 }
 body {
   font-family: "Inter", sans-serif;

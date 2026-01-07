@@ -7,10 +7,26 @@
 @import "utils/variables.css";    
 
 /* 3. Base - Éléments HTML bruts */
-@import "base/main.css";           
+@import "base/main.css";
+@import "base/media.css";           
 
 /* 4. Layout - Structure de page */
-@import "layout/header.css";       
+@import "layout/header.css";  
+@import "layout/footer.css";    
+@import "layout/hero.css"; 
 
 /* 5. Components - Spécificité la plus forte */
-@import "components/button.css";   
+@import "components/menu.css";
+@import "components/card.css";
+@import "components/carousel.css";
+@import "components/section.css";
+@import "components/cta.css";
+@import "components/form.css";
+@import "components/autres-projets.css";
+
+/* 6. Pages - Styles spécifiques par page */
+@import "pages/autres-projets.css";
+@import "pages/femmes-science.css";
+@import "pages/livre.css";
+@import "pages/les-fabuleuses.css";
+@import "pages/vulgarisation.css";

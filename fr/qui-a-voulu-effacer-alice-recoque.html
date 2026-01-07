@@ -34,23 +34,57 @@
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../en/qui-a-voulu-effacer-alice-recoque.html" class="language-toggle">EN</a>
+            <div class="header-right">
+                <a href="../en/qui-a-voulu-effacer-alice-recoque.html" class="language-toggle">EN</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <button class="mobile-menu-close" aria-label="Fermer le menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="alice-recoque.html">Alice Recoque</a></li>
+                <li><a href="vulgarisation-alice-recoque.html">Vulgarisation de la théorie d'Alice Recoque</a></li>
+                <li><a href="femmes-de-science.html">Les femmes de sciences dans la littérature</a></li>
+                <li><a href="qui-a-voulu-effacer-alice-recoque.html">"Qui a voulu effacé Alice Recoque"</a></li>
+                <li><a href="les-fabuleuses-effet-matilda.html">Les fabuleuses ou l'effet Matilda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="autres-projets.html">Autres projets</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero hero-multi-image">
         <img src="../assets/img/livre_hero.webp" alt="Qui a voulu effacé Alice Recoque">
         <div class="hero-content">
-            <h1>"Qui a voulu effacer Alice Recoque ?"</h1>
-            <p class="hero-meta">Publié par Maman Thilor Sambe, le 24/10/2025</p>
+            <h1>"Qui a voulu effacé<br>Alice Recoque ?"</h1>
         </div>
     </section>
+
+    <div class="published-meta">
+        <div class="container">
+            <p class="hero-meta">Publié par Maman Thilor Sambe, le 24/10/2025</p>
+        </div>
+    </div>
 
     <!-- Content Section -->
     <section class="content-section">
@@ -73,36 +107,38 @@
             </div>
 
             <h2>À propos du livre</h2>
-            <p>Son livre, "Qui a voulu effacer Alice Recoque ?", retrace la vie d'une pionnière française de l'informatique, dont le parcours exceptionnel a été longtemps occulté. Alice Recoque, née en 1929 en Algérie, a été une figure clé dans la conception des ordinateurs, la programmation et la sécurité informatique. Marion Carré, après une suite carrière dans l'informatique chez Ask Mona, ses conférences pour le ministère de la Culture, et ses ouvrages dénonce ce qu'elle appelle l'« effacement volontaire ou inconscient des femmes dans la mémoire collective ». Son livre met une enquête, analyse historique et réflexion éthique. Il montre à quel point la mémoire collective doit être redécouverte pour intégrer ces figures oubliées. Dans un contexte où l'IA et la culture se croisent, cet éclairage essentiel pour comprendre les mécanismes d'effacement et souligner la nécessité de leur réhabilitation. Son livre est un outil pédagogique puissant, une invitation à repenser la manière dont l'histoire des sciences intègre toutes les voix, notamment celles des femmes, parfois invisibilisées mais toujours fondamentales.</p>
+            <div class="about-section">
+                <p>Son livre, "Qui a voulu effacer Alice Recoque ?", retrace la vie d'une pionnière française de l'informatique, dont le parcours exceptionnel a été longtemps occulté. Alice Recoque, née en 1929 en Algérie, a été une figure clé dans la conception des ordinateurs, la programmation et la sécurité informatique. Marion Carré, après une suite carrière dans l'informatique chez Ask Mona, ses conférences pour le ministère de la Culture, et ses ouvrages dénonce ce qu'elle appelle l'« effacement volontaire ou inconscient des femmes dans la mémoire collective ». Son livre met une enquête, analyse historique et réflexion éthique. Il montre à quel point la mémoire collective doit être redécouverte pour intégrer ces figures oubliées. Dans un contexte où l'IA et la culture se croisent, cet éclairage essentiel pour comprendre les mécanismes d'effacement et souligner la nécessité de leur réhabilitation. Son livre est un outil pédagogique puissant, une invitation à repenser la manière dont l'histoire des sciences intègre toutes les voix, notamment celles des femmes, parfois invisibilisées mais toujours fondamentales.</p>
+            </div>
 
             <div class="interview-section">
                 <h3>Entretien avec Marion Carré</h3>
                 <p>Découvrez un entretien exclusif avec Marion Carré où elle parle de son livre, du parcours d'Alice Recoque et de l'importance de la réhabilitation des figures féminines dans l'histoire scientifique.</p>
-                <img src="../assets/img/entretien_avec_marion_carré.webp" alt="entretien avec Marion Carré">
+                <video src="../assets/video/entretien_avec_marion_carré.mp4" poster="../assets/img/entretien_avec_marion_carré.webp" alt="Entretien avec Marion Carré" loading="lazy" controls></video>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="logo-footer">
-                <img src="../assets/icone/logo_du_site.svg" alt="Empreintes invisibles de la science">
-            </div>
-            <nav class="footer-nav">
+        <div class="footer-header">
+            <div class="footer-container">
+                <img src="../assets/icone/logo_du_site.svg" alt="Logo footer">
+                <div class="footer-content">
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="glossaire.html">Glossaire</a></li>
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-credits">
+                <h2>Mention Légale</h2>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
+            </div>
+            </div>
         </div>
         <div class="footer-legal">
-            <h4>Mention Légale</h4>
-            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
-        </div>
-        <div class="footer-credits">
             <p>Maman Thilor Sambe | Groupe B2 | mamansambe47@gmail.com</p>
         </div>
     </footer>

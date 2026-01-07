@@ -34,21 +34,50 @@
                     <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../en/les-fabuleuses-effet-matilda.html" class="language-toggle">EN</a>
+            <div class="header-right">
+                <a href="../en/les-fabuleuses-effet-matilda.html" class="language-toggle">EN</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <button class="mobile-menu-close" aria-label="Fermer le menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="alice-recoque.html">Alice Recoque</a></li>
+                <li><a href="vulgarisation-alice-recoque.html">Vulgarisation de la théorie d'Alice Recoque</a></li>
+                <li><a href="femmes-de-science.html">Les femmes de sciences dans la littérature</a></li>
+                <li><a href="qui-a-voulu-effacer-alice-recoque.html">"Qui a voulu effacé Alice Recoque"</a></li>
+                <li><a href="les-fabuleuses-effet-matilda.html">Les fabuleuses ou l'effet Matilda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="autres-projets.html">Autres projets</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero hero-multi-image">
-        <img src="../assets/img/bande_annonce_documentaire.webp" alt="Les fabuleuses ou l'effet Matilda">
+        <video src="../assets/video/les_fabuleuses.mp4" poster="../assets/img/bande_annonce_documentaire.webp" controls muted></video>
         <div class="hero-content">
-            <h1>Les fabuleuses ou l'effet Matilda</h1>
-            <p class="hero-meta">Publié par Maman Thilor Sambe, le 24/10/2025</p>
+           
+            
         </div>
     </section>
 
@@ -56,7 +85,7 @@
     <section class="content-section">
         <div class="container">
           
-
+ <p class="content">Publié par Maman Thilor Sambe, le 24/10/2025</p>
             <!-- Description du documentaire -->
             <div class="documentary-description">
                 <h2>"Les fabuleuses ou l'effet Matilda" d'Elisabeth Bouchaud</h2>
@@ -68,7 +97,7 @@
                 <h2>Documentaire : Les Fabuleuses ou l'effet Matilda</h2>
                 <div class="doc-content">
                     <div class="doc-video">
-                        <img src="../assets/img/les-fabuleuses.avif" alt="Documentaire - Les Fabuleuses ou l'effet Matilda" loading="lazy">
+                        <video src="../assets/video/les_fabuleuses.mp4" poster="../assets/img/les-fabuleuses.avif" controls loading="lazy"></video>
                     </div>
                     <div class="doc-description">
                         <p>Le documentaire sappuie sur une mise en scène immersive et pédagogique qui mêle performances artistiques, archives historiques, interviews et analyses. L'histoire de Rosalind Franklin, par exemple, est présentée à travers la couverture du Radium (cristallographie des rayons X), du mystère IADN. Celle de Lise Meitner, prix Nobel exclue, engage une réflexion profonde sur le contexte de guerre, d'oeil et de discrimination quicìa sujet. Jocelyn Bell, à l'ors découverte des pulsars, incarne sur ses travaux cruciaux dans la découverte de la structure de l'ADN. Cette de Lise Meitner, prix Nobel exclue, engage une réflexion profonde sur le contexte de guerre, d'oeil et de discrimination quicìa sujet. Jocelyn Bell, à l'ors découverte des pulsars, incarne sur ses travaux cruciaux dans la découverte des pulsars.</p>
@@ -82,28 +111,28 @@
                 <div class="gallery-grid">
                     <!-- Film 1: Hidden Figures -->
                     <div class="film-card">
-                        <img src="../assets/img/hidden-figures.avif" alt="Hidden Figures" loading="lazy">
+                        <video src="../assets/video/hidden_figures.mp4" poster="../assets/img/hidden_figures.avif" controls loading="lazy"></video>
                         <h3>Hidden figures</h3>
                         <p>Film sur trois mathématiciennes afro-américaines ayant contribué aux missions spatiales. Montre leur combat contre le racisme et le sexisme.</p>
                     </div>
 
                     <!-- Film 2: Radioactive -->
                     <div class="film-card">
-                        <img src="../assets/img/film_radioactive.webp" alt="Radioactive" loading="lazy">
+                        <video src="../assets/video/radioactive.mp4" poster="../assets/img/film_radioactive.webp" controls loading="lazy"></video>
                         <h3>Radioactive</h3>
                         <p>Biopic sur Marie Curie, ses découvertes au rayonnement de l'infirmement et ses contributions révolutionnaires à la science.</p>
                     </div>
 
                     <!-- Film 3: Dépossédées -->
                     <div class="film-card">
-                        <img src="../assets/img/Film-sur-les-femmes-de-science.avif" alt="Dépossédées" loading="lazy">
+                        <video src="../assets/video/femmes_de_science.mp4" poster="../assets/img/Film-sur-les-femmes-de-science.avif" controls loading="lazy"></video>
                         <h3>Les découvertes oubliées des femmes scientifiques</h3>
                         <p>Documentaire mettant en lumière les contributions scientifiques des femmes dont les travaux ont été appropriés par d'autres, complète l'enquête avec la découverte des pulsars.</p>
                     </div>
 
                     <!-- Film 4: L'effet Matilda -->
                     <div class="film-card">
-                        <img src="../assets/img/film_sur_effet_matilda.avif" alt="L'effet Matilda" loading="lazy">
+                        <video src="../assets/video/effet_matilda.mp4" poster="../assets/img/film_sur_effet_matilda.avif" controls loading="lazy"></video>
                         <h3>L'effet Matilda</h3>
                         <p>Documentaire théâtral de Elisabeth Bouchaud qui explore les mécanismes d'invisibilisation des femmes dans la science, avec exemple historiques.</p>
                     </div>
@@ -114,24 +143,24 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="logo-footer">
-                <img src="../assets/icone/logo_du_site.svg" alt="Empreintes invisibles de la science">
-            </div>
-            <nav class="footer-nav">
+        <div class="footer-header">
+            <div class="footer-container">
+                <img src="../assets/icone/logo_du_site.svg" alt="Logo footer">
+                <div class="footer-content">
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#glossary">Glossaire</a></li>
-                    <li><a href="#projects">Autres projets</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="autres-projets.html">Autres projets</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-credits">
+                <h2>Mention Légale</h2>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
+            </div>
+            </div>
         </div>
         <div class="footer-legal">
-            <h4>Mention Légale</h4>
-            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique dans le département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI de Montbéliard</a></p>
-        </div>
-        <div class="footer-credits">
             <p>Maman Thilor Sambe | Groupe B2 | mamansambe47@gmail.com</p>
         </div>
     </footer>

@@ -1,0 +1,322 @@
+/* ========== HERO SECTION ========== */
+
+/* ===== BASE HERO (Styles communs à tous les heroes) ===== */
+/* Chaque héros définit son propre style sans dépendre de cette base */
+
+.hero {
+  position: relative;
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top right;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 58, 110, 0.55);
+  z-index: 1;
+}
+
+.hero__bande {
+  position: absolute;
+  width: 100%;
+  background: rgba(26, 58, 110, 0.75);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 2rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 7vw, 3.6rem);
+  font-weight: 700;
+  color: #ffcf81;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.3;
+  margin: 0;
+  max-width: 100%;
+}
+
+.hero-subtitle {
+  font-size: clamp(2.2rem, 7vw, 3.6rem);
+  font-weight: 700;
+  color: #ffcf81;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  max-width: 100%;
+}
+
+/* ===== HERO ACCUEIL (Page d'accueil) ===== */
+
+.hero--accueil {
+  height: 50vh;
+  min-height: 500px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.hero--accueil .hero__bande--top {
+  top: 20%;
+  height: 5%;
+}
+
+.hero--accueil .hero__bande--bottom {
+  bottom: 10%;
+  left: 4rem;
+  height: 5%;
+}
+
+/* ===== HERO ALICE (Page Alice Recoque) ===== */
+
+.hero--alice {
+  height: 40vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* ===== HERO VULGARISATION (Page Vulgarisation) ===== */
+
+.hero--vulgarisation {
+  position: relative;
+  height: auto;
+  min-height: auto;
+  display: flex;
+  align-items: flex-end;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+.hero--vulgarisation .hero__image {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.hero--vulgarisation .hero__bande--top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: none;
+  padding: 2rem 3rem;
+  background: rgba(26, 58, 110, 0.85);
+  z-index: 2;
+}
+
+/* ===== HERO GLOSSAIRE (Page Glossaire) ===== */
+
+.hero--glossaire {
+  height: 35vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.hero--glossaire .hero__bande--center {
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  height: auto;
+  width: auto;
+  padding: 1.2rem 3rem;
+}
+
+.hero--glossaire .hero__bande--center .hero-title {
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+}
+
+/* ===== HERO À PROPOS (Page À propos) ===== */
+
+.hero--apropos {
+  height: 35vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* ===== HERO AUTRES PROJETS (Page Autres projets) ===== */
+
+.hero--autres-projets {
+  height: 35vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* ===== HERO FEMMES DE SCIENCE (Page Femmes de science) ===== */
+
+.hero--femmes-science {
+  height: 35vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Filtre uniquement sur l'image pour femmes-science */
+.hero--femmes-science .hero__image {
+  position: relative;
+  z-index: 0;
+}
+
+.hero--femmes-science .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 71%;
+  background: rgba(26, 58, 110, 0.55);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Bande au milieu sans filtre */
+.hero--femmes-science .hero__bande--bottom {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  background: rgba(26, 58, 110, 0.75);
+  z-index: 2;
+  padding: 1.6rem 2rem;
+  text-align: center;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* ===== RESPONSIVE 768px ===== */
+
+@media (max-width: 768px) {
+  .hero--accueil {
+    height: 40vh;
+    min-height: 350px;
+  }
+
+  .hero--alice {
+    height: 35vh;
+    min-height: 300px;
+  }
+
+  .hero--vulgarisation {
+    height: 6vh;
+    min-height: 120px;
+  }
+
+  .hero--glossaire {
+    height: 30vh;
+    min-height: 300px;
+  }
+
+  .hero--apropos {
+    height: 30vh;
+    min-height: 300px;
+  }
+
+  .hero--autres-projets {
+    height: 30vh;
+    min-height: 300px;
+  }
+
+  .hero-content {
+    padding: 2rem 1.6rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== RESPONSIVE 480px ===== */
+
+@media (max-width: 480px) {
+  .hero--accueil {
+    height: 35vh;
+    min-height: 300px;
+  }
+
+  .hero--alice {
+    height: 30vh;
+    min-height: 250px;
+  }
+
+  .hero--vulgarisation {
+    height: 5vh;
+    min-height: 100px;
+  }
+
+  .hero--glossaire {
+    height: 25vh;
+    min-height: 250px;
+  }
+
+  .hero--apropos {
+    height: 25vh;
+    min-height: 250px;
+  }
+
+  .hero--autres-projets {
+    height: 25vh;
+    min-height: 250px;
+  }
+
+  .hero-content {
+    padding: 1.6rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+}
